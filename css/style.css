@@ -1,0 +1,2234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+/* "Mobile-first" стили */
+
+html{
+	box-sizing: border-box;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: Roboto, sans-serif;
+}
+
+
+/* Контейнеры блоков */
+
+.containerFirstSlide{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 596px;	
+}
+
+.container{
+	padding: 12px 20px 36px;
+	display: flex;
+	flex-direction: column;
+}
+
+.containerLastSlide{
+	padding: 12px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-background_promoIntro{
+	background: url(../img/bg-dark-promoIntro.jpg) #181615 center no-repeat;
+	background-size: cover;
+}
+
+.container-background_white{
+	background: #FAF9F9;
+}
+
+.container-background_yellow{
+	background: #F5DC3E;
+}
+
+.container-background_brown{
+	background: #2F1803;
+}
+
+.container-background_black{
+	background: #181615;
+}
+
+
+/* Информационные блоки и элементы */
+
+.stripeInfoTop{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 12px 24px;
+	background: rgba(20, 20, 20, 0.8);
+}
+
+.stripeInfoTop-block1_width{
+	width: 114px;
+}
+
+.stripeInfoTop-block2_width{
+	width: 95px;
+}
+
+.stripeInfoMiddle{
+	margin: 0 24px;
+	padding: 28px 32px;
+	background: rgba(93, 93, 93, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.stripeInfoBottom{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 12px 24px;
+	background: rgba(20, 20, 20, 0.8);
+}
+
+.stripeInfoBottomIcons{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.stripeInfoTitle{
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.stripeInfoDays{
+	font-weight: bold;
+	float: left;
+	margin-bottom: 4px;
+}
+
+/*.stripeInfoDays:last-child{
+	margin-bottom: 0;
+}*/
+
+.stripeInfoDays2{
+	font-weight: bold;
+	float: left;
+}
+
+.stripeInfoTime{
+	float: right;
+	margin-bottom: 4px;
+}
+
+/*.stripeInfoTime:last-child{
+	margin-bottom: 0;
+}*/
+
+.stripeInfoTime2{
+	float: right;
+}
+
+.stripeInfoTel{
+	float: left;
+	margin-bottom: 4px;
+}
+
+/*.stripeInfoTel:last-child{
+	margin-bottom: 0;
+}*/
+
+.stripeInfoLogo{
+	max-width: 225px;
+	margin-bottom: 20px;
+}
+
+.stripeInfoLine{
+	width: 120px;
+	height: 2px;
+	margin-bottom: 20px;
+}
+
+.stripeInfoText{
+	margin-bottom: 12px;
+}
+
+.stripeInfoTopText{
+	font-size: 12px;
+	line-height: 12px;
+}
+
+/*.stripeInfoText:last-child{
+	margin-bottom: 0;
+}*/
+
+.stripeInfoMiddleText{
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.stripeInfoBottomText{
+	font-size: 9px;
+	line-height: 9px;
+}
+
+.stripeInfoBottomTextWorkingSince{
+	text-align: center;
+}
+
+.blockAdvantageGroup{
+	margin-bottom: 16px;
+}
+
+/*.blockAdvantageGroup:last-child{
+	margin-bottom: 0;
+}*/
+
+.blockAdvantageOuter1{
+	margin-bottom: 16px;
+}
+
+.blockAdvantageOuter2{
+	margin-bottom: 16px;
+}
+
+.blockAdvantageOuter3{
+	margin-bottom: 16px;
+}
+
+/*.blockAdvantageOuter:last-child{
+	margin-bottom: 0;
+}*/
+
+.blockAdvantage{
+	padding: 16px;
+	background: linear-gradient(180deg, rgba(233, 178, 96, 0.58) 0%, rgba(255, 255, 255, 0) 100%), #FDE568;
+	border: 1px solid #202020;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blockAdvantageIconDiv{
+	margin: 0px 16px 0px 8px;
+	height: 46px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.blockAdvantageIconAndTitle{
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.sectionMeritsTitle{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.sectionMeritsText{
+	font-size: 13px;
+	line-height: 125%;
+	margin-left: 48px;
+}
+
+.blockAdvantageCoffeeMugGiant{
+	display: none;
+}
+
+.slider{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.blockCard{
+	max-width: 240px;
+	padding: 10px;
+}
+
+.blockCard2{
+	max-width: 240px;
+	padding: 10px;
+}
+
+.blockCardPseudoDiv{
+	display: flex;
+	justify-content: center;
+	padding-left: 12.5%;
+	padding-right: 12.5%;	
+	padding-bottom: 10%
+}
+	
+.blockCardColorBrown{
+	background: #442006;
+	border: 1px solid #1D0E02;
+}
+
+.blockCardColorWhite{
+	background: #D8D8D8;
+	border: 1px solid #BFBFBF;
+}
+
+.blockCardColorYellow{
+	background: #F3D97B;
+	border: 1px solid #B8AB64;
+}
+
+.blockCardInner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 28px 16px;
+}
+
+.blockCardInner2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px 28px 24px;
+}
+
+.blockCardInner2Div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blockCardInner3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 28px 40px;
+}
+
+.blockCardInnerFeedback{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blockCardInnerName{
+	margin-bottom: 8px;
+}
+
+.blockCardInnerRating{
+	padding: 4px 2px;
+	margin-bottom: 8px;
+}
+
+.blockCardInnerRatingStar{
+	/*margin-right: 2px;*/
+	margin-right: 0px;
+}
+
+/*.blockCardInnerRatingStar:last-child{
+	margin-right: 0;
+}*/
+
+.blockCardInnerRatingQuotationMark{
+	margin-right: 10px;
+	/*max-width: 14px;*/
+	align-self: flex-start;
+}
+
+.blockCardInnerRatingQuote{
+	width: 140px;
+}
+
+.blockCardInnerRatingQuotationMarkAndQuote{
+	display: flex;
+	align-items: space-between;
+}
+
+.blockCardInnerColorBrown{
+	border: 1px solid #F5DC3E;
+}
+
+.blockCardInnerColorWhite{
+	border: 1px solid #343434;
+}
+
+.blockCardInnerColorYellow{
+	border: 1px solid #343434;
+}
+
+.blockCardBottomLine {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.sectionFoodInfoText{
+	font-size: 12px;
+	line-height: 144%;
+}
+
+.sectionFoodInfoFoodPic{
+	margin-bottom: 28px;
+}
+
+.sectionFoodInfoNameAndDescription{
+	margin-bottom: 28px;
+}
+
+.sectionFoodInfoName{
+	font-size: 18px;
+	font-weight: bold;	
+	/*height: 23px;*/
+	padding-bottom: 14px;
+	line-height: 125%;
+}
+
+.sectionFoodInfoName2{
+	font-size: 18px;
+	font-weight: bold;	
+	/*height: 23px;*/
+	padding-bottom: 8px;
+}
+
+.sectionFoodInfoIngredients{
+	width: 100%;
+	margin-bottom: 28px;
+}
+
+.sectionFoodInfoIngredients:last-child{
+	margin-bottom: 0;
+}
+
+.sectionFoodInfoIngredientsTitle{
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+
+.sectionFoodInfoIngredientsName{
+	height: 14px;
+}
+
+.bullet{
+	font-size: 18px;
+	margin-right: 8px;
+}
+
+.bulletImg{
+	width: 4px;
+	margin-right: 8px;
+}
+
+.bulletedList{
+	margin-left: 12px;
+}
+
+.bulletedListLine{
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+/*.bulletedListLine:last-child{
+	margin-bottom: 0;
+}*/
+
+.sectionFoodInfoPrice{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 125%;
+}
+
+.reservation{
+	/*height: 684px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.reservationTwoBlocksOfThree{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.reservationBlockOfThree1{
+	height: 205px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.reservationBlockOfThree2{
+	height: 205px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*.reservationBlockOfThree:last-child{
+	margin-bottom: 0;
+}*/
+
+.sectionCoffeeMachineName{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.sectionCoffeeMachineDimensions{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 150%;
+	/*text-align: center;*/
+	margin-bottom: 16px;
+}
+
+.sectionCoffeeMachineText{
+	margin-bottom: 16px;
+}
+
+/*.sectionCoffeeMachineText:last-child{
+	margin-bottom: 0;
+}*/
+
+.sectionDidYouKnowDiv{
+	text-align: center;
+}
+
+.blockBragNum{
+	border: 3px solid #000000;
+	border-radius: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	margin-bottom: 16px;
+}
+
+/*.blockBragNum:last-child{
+	margin-bottom: 0;
+}*/
+
+.blockBragNum-fill_map{
+	background: url(../img/op-worldMap.png) center no-repeat;
+	background-size: contain;
+	height: 146px;
+}
+
+.blockBragNumNumber{
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 144%;
+}
+
+.blockBragNumText{
+	width: 168px;
+	text-align: center;
+}
+
+.formSubscribeToNewsletter{
+	/*display: inline-flex;*/
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.formSubscribeToNewsletterEmail{
+	margin-bottom: 16px;
+}
+
+.subscribeToNewsletterIcons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.formFeedback{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sliderCount{
+	margin-bottom: 40px;
+}
+
+.sectionFeedbackText{
+	margin-bottom: 16px;
+}
+
+.sectionFeedbackInputText{
+	margin-bottom: 16px;
+}
+
+.sectionFeedbackInputEmail{
+	margin-bottom: 16px;
+}
+
+.awards{
+	display: flex;
+	flex-direction: column;
+}
+
+.awardsText{
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.awardsBlockOfThree{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+/*.awardsBlockOfThree:last-child{
+	margin-bottom: 0;
+}*/
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footerText{
+	font-size: 7px;
+	line-height: 144%;
+}
+
+/*a{
+	padding-bottom: 0;
+}*/
+
+/*a img {
+	border: none; 
+}*/
+  
+input,
+select,
+option,
+date,
+time,
+textarea{
+	padding: 16px;
+	width: 100%;
+	font-size: 15px;
+	line-height: 144%;
+}
+
+textarea{
+    position: relative;
+    z-index: 1;
+	resize: vertical;
+	min-height: 120px;
+}
+
+.textarea-height_small{
+	min-height: 120px;
+}
+
+.textarea-height_big{
+	min-height: 182px;
+}
+
+.wrapTextarea{
+	position: relative;
+    display: inline-block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.textareaPullTabBlack{
+	height: 0px;
+    width: 0px;
+    border-top: 14px solid #202020;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    bottom: 2px;
+    right: -8px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.textareaPullTabBrown{
+	height: 0px;
+    width: 0px;
+    border-top: 14px solid #533007;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    bottom: 2px;
+    right: -8px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@supports (-moz-appearance:none){
+.textareaPullTabBlack{
+	bottom: -1px;
+}
+
+.textareaPullTabBrown{
+	bottom: -1px;
+}
+}
+
+.container-background_yellow input,
+.container-background_yellow select,
+.container-background_yellow option,
+.container-background_yellow date,
+.container-background_yellow time,
+.container-background_yellow textarea
+{
+	border: 2px solid #202020;
+	color: #202020;
+	background: none;
+}
+
+.container-background_yellow input::placeholder,
+.container-background_yellow option::placeholder,
+.container-background_yellow date::placeholder,
+.container-background_yellow time::placeholder,
+.container-background_yellow textarea::placeholder
+{
+	color: #202020;
+	opacity: 1;
+	background: none;
+}
+
+.container-background_yellow input[type="text"]{
+	background: url(../img/icon-person-black.png) 96% 50% no-repeat;
+}
+
+.container-background_yellow input[type="tel"]{
+	background: url(../img/icon-phone-black.png) 96% 50% no-repeat;
+}
+
+.container-background_yellow input[type="email"]{
+	background: url(../img/icon-email-black.png) 96% 50% no-repeat;
+}
+
+@supports (-moz-appearance:none){
+.container-background_yellow input[type="date"]{
+	background: url(../img/icon-calendar-black.png) 96% 50% no-repeat;
+}
+
+.container-background_yellow input[type="time"]{
+	background: url(../img/icon-clock-black.png) 96% 50% no-repeat;
+}
+}
+
+input[type="submit"]{
+	padding: 16px 40px;
+	border-radius: 8px;
+	/*border: none;*/
+	cursor: pointer;
+}
+
+select{
+	cursor: pointer;
+}
+
+.container-background_yellow input[type="submit"]{
+	background: #202020;
+	color: #F5DC3E;
+	border: 2px solid #202020;
+}
+
+.container-background_yellow input[type="submit"]:active{
+	border: 2px solid #F5DC3E;
+}
+
+.container-background_white input[type="submit"]{
+	background: #533007;
+	color: #FAF9F9;
+	border: 2px solid #533007;
+}
+
+.container-background_white input[type="submit"]:active{
+	border: 2px solid #FAF9F9;
+}
+
+.container-background_white input[type="text"]{
+	background: url(../img/icon-person-brown.png) 96% 50% no-repeat;
+}
+
+.inputSubmit1{
+	max-width: 230px;
+}
+
+.inputSubmit3{
+	max-width: 252px;
+}
+
+.container-background_white input,
+.container-background_white select,
+.container-background_white option,
+.container-background_white date,
+.container-background_white time,
+.container-background_white textarea
+{
+	border: 2px solid #533007;
+	color: #533007;
+	background: none;
+}
+
+.container-background_white input::placeholder,
+.container-background_white option::placeholder,
+.container-background_white date::placeholder,
+.container-background_white time::placeholder,
+.container-background_white textarea::placeholder
+{
+	color: #533007;
+	opacity: 1;
+	background: none;
+}
+
+.container-background_white input[type="email"]{
+	background: url(../img/icon-email-brown.png) 96% 50% no-repeat;
+}
+
+.dropdown {
+	position: relative;
+	width: 100%;
+}
+
+.dropdown select{
+	appearance: none;
+}
+
+.dropdown .material-icons {
+	font-family: Material Icons;
+	font-size: 40px;
+	line-height: 24px;
+	color: black;
+	position: absolute;
+	top: 30%;
+	/*left: 86.5%;*/
+	right: 1%;
+	pointer-events: none; 
+}
+
+.dropdownMarginBottom{
+	margin-bottom: 16px;
+}
+
+.iconStripeInfoBottom{
+	max-height: 36px;
+}
+
+.iconSubscribeToNewsletter{
+	max-height: 56px;
+}
+
+
+/* Форматирование текста (глобальное) */
+
+.textBody{
+	/*font-weight: normal;*/
+	font-size: 15px;
+	line-height: 144%;
+	margin: 0px 0px 16px;
+}
+
+.textBodyNoMarginBottom{
+	/*font-weight: normal;*/
+	font-size: 15px;
+	line-height: 144%;
+}
+
+/*.textBody:last-child{
+	margin: 0;
+}*/
+
+.textBodyTitle{
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 144%;
+	margin: 0px 0px 18px;
+}
+
+/*.textBodyTitle:last-child{
+	margin: 0;
+}*/
+
+h1{	
+	font-family: 'EB Garamond', serif;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 110%;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.textButton{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 144%;
+	text-align: center;
+}
+
+.container-background_white h1{
+	color: #8A5A12;
+}
+
+.container-background_yellow h1{
+	color: #462303;
+}
+
+/*.container-background_dark h1{
+	color: #E2CBA9;
+}*/
+
+.container-background_brown h1{
+	color: #E2CBA9;
+}
+
+.container-background_black h1{
+	color: #E2CBA9;
+}
+
+.container-background_promoIntro p,
+.container-background_promoIntro span{
+	color: #DDDDDD;
+}
+
+.container-background_white p,
+.container-background_white span{
+	color: #533007;
+}
+
+.container-background_yellow p,
+.container-background_yellow span{
+	color: #202020;
+}
+
+.container-background_brown p,
+.container-background_brown span{
+	color: #F5E7CD;
+}
+
+.container-background_black p,
+.container-background_black span{
+	color: #F5E7CD;
+}
+
+
+/* Картинки */
+
+/*.imageBig{
+	border-radius: 32px;
+	max-height: 216px;
+}*/
+
+.picCoffeeHouseCounter{
+	border-radius: 32px;
+	height: 216px;
+	background: url(../img/op-coffeeHouseCounter.jpg) #181615 center no-repeat;
+	background-size: cover;
+	margin-bottom: 16px;
+}
+
+.picCupOfCoffeeDarkBG{
+	border-radius: 32px;
+	height: 216px;
+	background: url(../img/op-cupOfCoffeeDarkBG.jpg) #181615 center no-repeat;
+	background-size: cover;
+	margin-bottom: 16px;
+}
+
+.picArrow{
+	width: 24px;
+}
+
+.picArrow-direction_counter{
+	transform: rotate(180deg);
+}
+
+.picBig{
+	height: 208px;
+}
+
+.picBigVertical{
+	height: 208px;
+}
+
+.picBigBorderRadius{
+	border-radius: 32px;
+}
+
+.picBigDivVertical{
+	display: flex;
+	justify-content: center;
+	padding: 0 64px 28px 52px;
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+
+.picBigDivHorizontal{
+	display: flex;
+	justify-content: center;
+	padding: 0 64px 28px 52px;
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+
+.picBigDivSquare{
+	display: flex;
+	justify-content: center;
+	padding: 0 64px 28px 52px;
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+
+.picBigDivNoPaddingBottom{
+	padding-bottom: 0;
+}
+
+.picWorldMap{
+	height: 146px;
+}
+
+.picPortrait{
+	width: 123px;
+	border-radius: 16px;
+	margin: 0 24px 24px;
+}
+
+.picLogoSmall{
+	width: 120px;
+	margin-bottom: 16px;
+}
+
+.shadowPic_always{
+	filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.5));
+}
+
+
+
+/* Изменения стилей под ПК версию сайта (дополнительная коррекция стилей в нестандартных точках останова) */
+@media screen and (min-width: 450px) {
+.blockBragNum-fill_map{
+	height: 200px;
+}
+}
+
+@media screen and (min-width: 600px) {
+.blockBragNum-fill_map{
+	height: 300px;
+}
+}
+
+/* Изменения стилей под ПК версию сайта ---> */
+@media screen and (min-width: 768px) {
+	
+/* Форматирование текста (глобальное) */
+
+.textBody{
+	font-size: 14px;	
+	margin-bottom: 32px;
+}
+
+.textBodyNoMarginBottom{
+	font-size: 14px;
+}
+
+.PC_textAlign-center{
+	text-align: center;
+}
+
+.textBodyTitle{
+	font-size: 21px;
+	margin-bottom: 48px;
+}
+
+h1{
+	font-size: 48px;
+	line-height: 63px;
+	text-align: left;
+	margin-bottom: 57px;
+}
+
+.textButton{
+	
+}
+
+.container-background_white h1{
+	background: linear-gradient(180deg, #683C12 54.64%, rgba(255, 255, 255, 0) 73.69%),
+				linear-gradient(0deg, #8A5A12, #8A5A12);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: table;
+}
+
+.container-background_yellow h1{
+	background: linear-gradient(180deg, #5D3904 59.14%, rgba(255, 255, 255, 0) 67.08%),
+				linear-gradient(0deg, #201001, #201001);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: table;
+}
+
+.container-background_brown h1{
+	background: linear-gradient(180deg, #E2CBA9 41.21%, rgba(255, 255, 255, 0) 66.61%),
+				linear-gradient(0deg, #A39460, #A39460);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: table;
+}
+
+.container-background_black h1{
+	background: linear-gradient(180deg, #E2CBA9 41.21%, rgba(255, 255, 255, 0) 66.61%),
+				linear-gradient(0deg, #A39460, #A39460);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: table;
+}
+
+	
+/* Контейнеры блоков */
+
+.containerFirstSlide{
+	height: 920px;	
+}
+
+.container{
+	/*padding: 40px 400px 80px;*/
+	padding: 40px 20.83% 80px;
+}
+
+.containerLastSlide{
+	/*padding: 24px 400px;*/
+	padding: 24px 20.83333333333333vw;
+	flex-direction: row;
+}
+
+.containerAboutUs{
+	display: block;
+	/*height: 999px;*/
+	background: url(../img/bg-white-steam.jpg);
+	background-size: cover;
+}
+
+.containerAdvantages{
+	background: url(../img/bg-yellow-advantages.png);
+	padding-bottom: 32px;
+	position: relative;
+	background-size: cover;
+}
+
+.containerMenuOfCoffee{
+	background: url(../img/bg-dark-menuOfCoffee.jpg);
+	background-size: cover;
+}
+
+.containerMenuOfDessert{
+	background: url(../img/bg-white-menuOfDesserts.jpg);
+	background-size: cover;
+}
+
+.containerPromoCoffeeGrains{
+	background: url(../img/bg-yellow-promoCoffeeGrains.jpg);
+	background-size: cover;
+}
+
+.containerPromoPremiumChoco{
+	background: url(../img/bg-dark-promoPremiumChoco.jpg);
+	background-size: cover;
+}
+
+.containerPromoSeasonalOffers{
+	background: url(../img/bg-white-promoSeasonalOffers.jpg);
+	background-size: cover;
+}
+
+.containerReservation{
+	background: url(../img/bg-yellow-reservation.jpg);
+	background-size: cover;
+}
+
+.containerPromoGiftCards{
+	background: url(../img/bg-dark-promoGiftCards.jpg);
+	background-size: cover;
+}
+
+.containerCoffeeMachinesUsed{
+	background: url(../img/bg-white-coffeeMachinesUsed.jpg);
+	background-size: cover;
+}
+
+.containerVarietiesOfCoffeeDrinks{
+	background: url(../img/bg-yellow-varietiesOfCoffeeDrinks.jpg);
+	background-size: cover;
+}
+
+.containerDidYouKnow{
+	background: url(../img/bg-dark-promoDidYouKnow.jpg);
+	background-size: cover;
+}
+
+.containerSubscribeToNewsletter{
+	background: url(../img/bg-white-subscribeToNewsletter.jpg);
+	background-size: cover;
+}
+
+.containerBragNum{
+	background: url(../img/bg-yellow-bragNum.jpg);
+	background-size: cover;
+}
+
+.containerFeedback{
+	background: url(../img/bg-dark-feedback.jpg);
+	background-size: cover;
+}
+
+.containerYourFeedback{
+	background: url(../img/bg-white-yourFeedback.jpg);
+	background-size: cover;
+}
+
+.containerAwards{
+	background: url(../img/bg-yellow-awards.jpg);
+	background-size: cover;
+}
+
+
+/* Информационные блоки и элементы */
+
+.stripeInfoTop{
+	padding: 16px 54px;
+}
+
+.stripeInfoTop-block1_width{
+	width: 208px;
+}
+
+.stripeInfoTop-block2_width{
+	width: 175px;
+}
+
+.stripeInfoMiddle{
+	max-width: 1120px;
+	padding: 48px 64px;
+}
+
+.stripeInfoBottom{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 54px;
+}
+
+.stripeInfoBottomIcons{
+	margin-bottom: 0;
+}
+
+.stripeInfoTitle{	
+	margin-bottom: 14px;
+}
+
+.stripeInfoDays{
+	margin-bottom: 8px;
+}
+
+.stripeInfoTime{
+	margin-bottom: 8px;
+}
+
+.stripeInfoTel{
+	margin-bottom: 8px;
+}
+
+.stripeInfoTelLast{
+	margin-bottom: 0;
+}
+
+.stripeInfoLogo{
+	max-width: none;
+	margin-bottom: 64px;
+}
+
+.stripeInfoLine{
+	width: auto;
+	margin-bottom: 64px;
+}
+
+.stripeInfoText{
+	margin-bottom: 24px;
+}
+
+.stripeInfoTopText{
+	font-size: 22px;
+	line-height: 100%;
+}
+
+.stripeInfoMiddleText{
+	font-size: 18px;
+	line-height: 144%;
+}
+
+.stripeInfoBottomText{
+	font-size: 17px;
+	line-height: 100%;
+}
+
+.slider{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.blockCard{
+	max-width: 270px;
+	padding: 10px;
+}
+
+.blockCard2{
+	max-width: 373px;
+	padding: 10px;
+}
+
+.blockCard3{
+	max-width: none;
+	width: 83.4%;
+	padding: 10px;
+}
+
+.blockCardPseudoDiv{
+	display: flex;
+	justify-content: center;
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+	
+	padding-bottom: 10%
+}
+	
+.blockCardColorBrown{
+	background: #442006;
+	border: 1px solid #1D0E02;
+}
+
+.blockCardColorWhite{
+	background: #D8D8D8;
+	border: 1px solid #BFBFBF;
+}
+
+.blockCardColorYellow{
+	background: #F3D97B;
+	border: 1px solid #B8AB64;
+}
+
+.blockCardInner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 42px 42px 24px;
+}
+
+.blockCardInner2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px 28px 24px;
+}
+
+.blockCardInner2Div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blockCardInner3{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 56px 40px;
+}
+
+.blockCardInnerFeedback{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.blockCardInnerFeedbackOuter{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*flex-direction: row;
+	justify-content: center;
+	margin: 0 64px;*/
+}
+
+.blockCardInnerName{
+	margin-bottom: 14px;
+}
+
+.blockCardInnerRating{
+	padding: 4px 2px;
+	margin-bottom: 14px;
+}
+
+.blockCardInnerRatingStar{
+	/*margin-right: 2px;*/
+	margin-right: 0px;
+	width: 24px;
+}
+
+.blockCardInnerRatingStar:last-child{
+	margin-right: 0;
+}
+
+.blockCardInnerRatingQuotationMark{
+	margin-right: 10px;
+	/*max-width: 14px;*/
+	width: 20px;
+	align-self: flex-start;
+}
+
+.blockCardInnerRatingQuote{
+	/*width: 320px;*/
+}
+
+.blockCardInnerRatingQuotationMarkAndQuote{
+	display: flex;
+	align-items: space-between;
+}
+
+.blockCardInnerColorBrown{
+	border: 1px solid #F5DC3E;
+}
+
+.blockCardInnerColorWhite{
+	border: 1px solid #343434;
+}
+
+.blockCardInnerColorYellow{
+	border: 1px solid #343434;
+}
+
+.blockCardBottomLine {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.sectionFoodInfoText{
+	font-size: 13px;
+	line-height: 125%;
+}
+
+.sectionFoodInfoFoodPic{
+	margin-bottom: 28px;
+	width: 110px;
+}
+
+.sectionFoodInfoNameAndDescription{
+	margin-bottom: 28px;
+}
+
+.sectionFoodInfoName{
+	font-size: 22px;
+	font-weight: bold;	
+	/*height: 23px;*/
+	padding-bottom: 18px;
+	line-height: 125%;
+}
+
+.sectionFoodInfoName2{
+	font-size: 22px;
+	font-weight: bold;	
+	/*height: 23px;*/
+	padding-bottom: 0;
+	line-height: 125%;
+}
+
+.sectionFoodInfoIngredients{
+	width: 100%;
+	margin-bottom: 28px;
+}
+
+.sectionFoodInfoIngredients:last-child{
+	margin-bottom: 0;
+}
+
+.sectionFoodInfoIngredientsTitle{
+	font-size: 15px;
+	line-height: 150%;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.sectionFoodInfoIngredientsName{
+	height: 14px;
+}
+
+.bullet{
+	font-size: 18px;
+	margin-right: 8px;
+}
+
+.bulletImg{
+	width: 4px;
+	margin-right: 8px;
+}
+
+.bulletedList{
+	margin-left: 12px;
+}
+
+.bulletedListLine{
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.bulletedListLine:last-child{
+	margin-bottom: 0;
+}
+
+.sectionFoodInfoPrice{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 125%;
+}
+
+.promoCoffeeGrains{
+	
+}
+
+.promoChocoPremium{
+	
+}
+
+.promoSeasonalOffers{
+	
+}
+
+.reservation{
+	
+}
+
+.reservationTwoBlocksOfThree{
+	flex-direction: row;
+	margin-bottom: 32px;
+}
+
+.reservationBlockOfThree1{
+	width: 50%;
+	height: 237px;
+	margin-bottom: 0;
+	margin-right: 16px;
+}
+
+.reservationBlockOfThree2{
+	width: 50%;
+	height: 237px;
+	margin-bottom: 0;
+	margin-left: 16px;
+}
+
+.reservationBlockOfThree:last-child{
+	margin-bottom: 0;
+}
+
+.promoGiftCards{
+
+}
+
+.sectionCoffeeMachineName{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	line-height: 125%;
+}
+
+.sectionCoffeeMachineDimensions{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 150%;
+	margin-bottom: 16px;
+}
+
+.sectionCoffeeMachineText{
+	margin-bottom: 16px;
+}
+
+.sectionCoffeeMachineText:last-child{
+	margin-bottom: 0;
+}
+
+.promoDidYouKnow{
+	
+}
+
+.sectionDidYouKnowDiv{
+	text-align: center;
+}
+
+.sectionSubscribeToNewsletter{
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+}
+
+.formSubscribeToNewsletter{
+	/*display: inline-flex;*/
+	/*display: flex;*/
+	flex-direction: row;
+	width: auto;
+	margin-bottom: 32px;	
+}
+
+.formSubscribeToNewsletterEmail{
+	margin: 3px 16px 3px 0;
+	min-width: 50%;
+}
+
+.subscribeToNewsletterIcons{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto auto auto;
+}
+
+.blockBragNum{
+	
+}
+
+.blockBragNumFacts{
+	
+}
+
+.blockBragNumFact{
+	
+}
+
+.blockBragNum-fill_map{
+	height: 500px;
+}
+
+.blockBragNumNumber{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 144%;
+}
+
+.blockBragNumText{
+	width: 98px;
+}
+
+.formFeedback{
+	
+}
+
+.sliderCount{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.sectionFeedback{
+	
+}
+
+.sectionFeedbackText{
+	
+}
+
+.sectionFeedbackInputText{
+	margin-bottom: 32px;
+}
+
+.sectionFeedbackInputEmail{
+	margin-bottom: 32px;
+}
+
+.awards{
+	margin-top: 40px;
+}
+
+.awardsText{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.awardsBlockOfThree{
+	
+}
+
+.awardsBlockOfThree:last-child{
+	margin-bottom: 0;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.footerText{
+	font-size: 10px;
+	line-height: 144%;
+}
+
+/*a{
+	padding-bottom: 0;
+}*/
+
+/*a img {
+	border: none; 
+}*/
+  
+input,
+select,
+option,
+date,
+time,
+textarea{
+	padding: 16px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 144%;
+}
+
+textarea {
+    position: relative;
+    z-index: 1;
+	resize: vertical;
+	min-height: 120px;
+}
+
+.textarea-height_small{
+	min-height: 120px;
+}
+
+.textarea-height_big{
+	min-height: 182px;
+}
+
+.wrapTextarea{
+	position: relative;
+    display: inline-block;
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+.textareaPullTabBlack{
+	height: 0px;
+    width: 0px;
+    border-top: 14px solid #202020;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    bottom: 2px;
+    right: -8px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.textareaPullTabBrown{
+	height: 0px;
+    width: 0px;
+    border-top: 14px solid #533007;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    bottom: 2px;
+    right: -8px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@supports (-moz-appearance:none){
+.textareaPullTabBlack{
+	bottom: -1px;
+}
+
+.textareaPullTabBrown{
+	bottom: -1px;
+}
+}
+
+.container-background_yellow input,
+.container-background_yellow select,
+.container-background_yellow option,
+.container-background_yellow date,
+.container-background_yellow time,
+.container-background_yellow textarea,
+{
+	border: 2px solid #202020;
+	color: #202020;
+	background: none;
+}
+
+.container-background_yellow input::placeholder,
+.container-background_yellow option::placeholder,
+.container-background_yellow date::placeholder,
+.container-background_yellow time::placeholder,
+.container-background_yellow textarea::placeholder
+{
+	color: #202020;
+	opacity: 1;
+	background: none;
+}
+
+.container-background_yellow input[type="text"]{
+	background: url(../img/icon-person-black.png) 96% 50% no-repeat;
+}
+
+.container-background_yellow input[type="tel"]{
+	background: url(../img/icon-phone-black.png) 96% 50% no-repeat;
+}
+
+.container-background_yellow input[type="email"]{
+	background: url(../img/icon-email-black.png) 96% 50% no-repeat;
+}
+
+@supports (-moz-appearance:none){
+.container-background_yellow input[type="date"]{
+	background: url(../img/icon-calendar-black.png) 96% 50% no-repeat;
+}
+
+.container-background_yellow input[type="time"]{
+	background: url(../img/icon-clock-black.png) 96% 50% no-repeat;
+}
+}
+
+input[type="submit"]{
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+
+select{
+	cursor: pointer;
+}
+
+.container-background_yellow input[type="submit"]{
+	background: #202020;
+	color: #F5DC3E;
+	border: 2px solid #202020;
+}
+
+.container-background_yellow input[type="submit"]:hover{
+	background: #F5DC3E;
+	color: #202020;
+}
+
+.container-background_yellow input[type="submit"]:active{
+	background: #202020;
+	color: #F5DC3E;
+	border: 2px solid #F5DC3E;
+}
+
+.container-background_white input[type="submit"]{
+	background: #533007;
+	color: #FAF9F9;
+	border: 2px solid #533007;
+}
+
+.container-background_white input[type="submit"]:hover{
+	background: #FAF9F9;
+	color: #533007;
+}
+
+.container-background_white input[type="submit"]:active{
+	background: #533007;
+	color: #FAF9F9;
+	border: 2px solid #FAF9F9;
+}
+
+.container-background_white input[type="text"]{
+	background: url(../img/icon-person-brown.png) 97% 50% no-repeat;
+}
+
+.inputSubmit1{
+	max-width: 310px;
+}
+
+.inputSubmit2{
+	max-width: 360px;
+}
+
+.inputSubmit3{
+	max-width: 252px;
+}
+
+.container-background_white input,
+.container-background_white select,
+.container-background_white option,
+.container-background_white date,
+.container-background_white time,
+.container-background_white textarea
+{
+	border: 2px solid #533007;
+	color: #533007;
+	background: none;
+}
+
+.container-background_white input::placeholder,
+.container-background_white option::placeholder,
+.container-background_white date::placeholder,
+.container-background_white time::placeholder,
+.container-background_white textarea::placeholder
+{
+	color: #533007;
+	opacity: 1;
+	background: none;
+}
+
+.container-background_white input[type="email"]{
+	background: url(../img/icon-email-brown.png) 97% 50% no-repeat;
+}
+
+.dropdown {
+	position: relative;
+	width: 100%;
+}
+
+.dropdown select{
+	appearance: none;
+}
+
+.dropdown .material-icons {
+	font-family: Material Icons;
+	font-size: 40px;
+	line-height: 24px;
+	color: black;
+	position: absolute;
+	top: 30%;
+	/*left: 86.5%;*/
+	right: 1%;
+	pointer-events: none; 
+}
+
+.dropdownMarginBottom{
+	margin-bottom: 32px;
+}
+
+.iconStripeInfoBottom{
+	max-height: 40px;
+	margin-right: 16px;
+}
+
+.iconSubscribeToNewsletter{
+	
+}
+
+
+/* Картинки */
+
+.picCoffeeHouseCounter{
+	height: 353px;
+	margin: 0 52px 42px 36px;
+}
+
+.picCupOfCoffeeDarkBG{
+	height: 250px;	
+	margin: 0 28px 28px 36px;
+}
+
+.picArrow{
+	
+}
+
+.picBig{
+	height: 320px;
+}
+
+.picBigVertical{
+	height: auto;
+	width: 320px;
+}
+
+.picBigBorderRadius{
+	
+}
+
+.picBigDivVertical{
+	flex-basis: 1824px;
+	padding: 0 52px 28px;
+	margin-bottom: 18px;
+}
+
+.picBigDivHorizontal{
+	flex-basis: 2483px;
+	padding: 0 52px 28px;
+	margin-bottom: 0;
+}
+
+.picBigDivSquare{
+	flex-basis: 1824px;
+	padding: 0 52px 28px;
+	margin-bottom: 0;
+}
+
+.picBigDivNoPaddingBottom{
+	padding-bottom: 0;
+}
+
+.picWorldMap{
+	height: 508px;
+}
+
+.picPortrait{
+	width: 174px;
+}
+
+.picLogoSmall{
+	width: 164px;
+	margin-bottom: 0;
+}
+
+.shadowPic_always{
+	filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.5));
+}
+
+.shadowPic_PConly{
+	filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.5));
+}
+
+.shadowPicAwards_PConly{
+	/*box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);*/
+	filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
+}
+} /* <--- Изменения стилей под ПК версию сайта */
+
+
+/* Изменения стилей под ПК версию сайта (дополнительная коррекция стилей в нестандартных точках останова) */
+@media screen and (min-width: 922px) {
+.iconSubscribeToNewsletter{
+	max-height: none;
+}
+
+.subscribeToNewsletterIcons{
+	width: 537px;
+}
+}
+
+@media screen and (min-width: 934px) {
+.blockCardInnerRatingQuote{
+	width: 320px;
+}
+}
+
+@media screen and (min-width: 1078px) {
+.sectionFeedback{
+	display: flex;
+	flex-direction: row;
+}
+
+.sectionFeedbackText{
+	margin-bottom: 16px;
+	width: 50%;
+	margin-right: 52px;
+}
+
+.formFeedback{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+}
+}
+
+@media screen and (min-width: 1150px) {
+.containerAboutUs{
+	min-height: 1042px;
+}
+
+.picCoffeeHouseCounter{
+	/*width: 496px;*/
+	width: 25.83vw;
+	float: left;
+}
+
+.picCupOfCoffeeDarkBG{
+	/*width: 368px;*/
+	width: 19.17vw;
+	float: right;
+}
+}
+
+@media screen and (min-width: 1275px) {
+.promoDidYouKnow{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+}
+
+@media screen and (min-width: 1280px) {
+.blockCardInnerFeedbackOuter{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*margin: 0 64px;*/
+}
+
+.picPortrait{
+	margin: 0 36px 0 0;
+}
+}
+
+@media screen and (min-width: 1290px) {
+input[type="submit"]{
+	padding: 16px 80px;
+}
+}
+
+@media screen and (min-width: 1408px) {
+.promoGiftCards{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+}
+
+@media screen and (min-width: 1435px) {
+.promoCoffeeGrains{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.picBigDivVertical{
+	margin-bottom: 0;
+}
+}
+
+@media screen and (min-width: 1500px) {
+.blockAdvantageGroup{
+	margin-bottom: 0;
+}
+
+.blockAdvantageOuter1{
+	margin-bottom: 0;
+	height: 358px;
+}
+
+.blockAdvantageOuter2{
+	margin-bottom: 0;
+	height: 313px;
+}
+
+.blockAdvantageOuter3{
+	margin-bottom: 0;
+	height: 414px;
+}
+
+.blockAdvantage{
+	width: 248px;
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.blockAdvantageIconDiv{
+	height: 48px;
+}
+
+.blockAdvantageIconAndTitle{
+	margin-bottom: 16px;
+}
+
+.sectionMeritsTitle{
+	font-size: 15px;
+}
+
+.sectionMeritsText{
+	font-size: 12px;
+}
+
+.blockAdvantageAll{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.blockAdvantageCoffeeMugGiant{
+	display: block;
+	position: absolute;
+	width: 28%;
+	left: 38%;
+	top: 23.7%;
+}
+
+.blockBragNumFacts{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.blockBragNum{
+	border: 3px solid #000000;
+	border-radius: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	margin-bottom: 36px;
+	background-color: #F5DC3E;
+}
+
+.blockBragNumFact{
+	width: 211px;
+	height: 88px;
+	margin-bottom: 0;
+}
+}
+
+@media screen and (min-width: 1625px) {
+.promoChocoPremium{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+}
+
+@media screen and (min-width: 1680px) {
+.awards{
+	display: flex;
+	flex-direction: row;
+	/*margin: 40px 13px 0;*/
+	margin: 40px 0.67708333333333vw 0;
+}
+
+.awardsBlockOfThree{
+	display: flex;
+	justify-content: space-between;
+	/*margin-bottom: 16px;*/
+	margin-bottom: 0;
+	width: 33.333333%;
+	/*margin: auto 15px auto;*/
+	margin: auto 0.78125vw auto;
+}
+}
+
+@media screen and (min-width: 1800px) {
+	.promoSeasonalOffers{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+} /* <--- Изменения стилей под ПК версию сайта (дополнительная коррекция стилей в нестандартных точках останова) */
